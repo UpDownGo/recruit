@@ -8,6 +8,8 @@ public class RoomComponent : MonoBehaviour
     public int DB_ID;
     public float Room_ID;
 
+    public int index;
+
     public float Height;
 
     //public MeshFilter meshFilter;
@@ -15,14 +17,15 @@ public class RoomComponent : MonoBehaviour
 
     public Mesh mesh;
     // Start is called before the first frame update
-    void Start()
+    private void Update()
     {
-        
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnMouseDown()
     {
-        
+        GameObject obj = GameObject.Find("MyFrameWork");
+        obj.GetComponent<MyFramework>().SelectObject(index);
+        //Debug.Log("Click! " + index);
     }
+
 }

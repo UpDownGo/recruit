@@ -64,7 +64,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\MeshTest.cs" />
     <Compile Include="Assets\Scripts\MyFramework.cs" />
     <Compile Include="Assets\Scripts\RoomComponent.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
